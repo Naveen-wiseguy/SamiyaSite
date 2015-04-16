@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sam</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav>
+<% if !session[:loggedin] %>
+<div>Login</div>
+<% else %>
+<div>Logout</div>
+<% end %>
+<div><%= link_to 'About','about' %> </div>
+</nav>
+<%= yield %>
+
+</body>
+</html>
