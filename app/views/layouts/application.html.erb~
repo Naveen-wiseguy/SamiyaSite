@@ -8,13 +8,17 @@
 </head>
 <body>
 <nav>
+<div><%= link_to 'Home', root_path %>
 <% if !session[:loggedin] %>
-<div>Login</div>
+<div><%= link_to 'Login', 'login' %></div>
 <% else %>
-<div>Logout</div>
+<div><%= link_to 'Logout', 'logout' %></div>
 <% end %>
-<div><%= link_to 'About','home#about' %> </div>
+<div><%= link_to 'About','about' %> </div>
 </nav>
+<% flash.each do |key,value| %>
+ <div class="flash"><%= value %> </div>
+<% end %>
 <%= yield %>
 
 </body>

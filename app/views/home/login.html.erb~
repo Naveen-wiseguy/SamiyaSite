@@ -1,0 +1,50 @@
+<% flash.each do |key,value| %>
+ <div class="flash"><%= value %> </div>
+<% end %>
+<h1>Prove yourself to be True</h1>
+<p>3 is the magic number. And 3 questions you shall have to answer to prove yourself true. The triple filter test awaits you. </p>
+<p>Take it one at a time</p>
+<%= form_tag 'Auth' do %>
+
+<div class="form" id="step1">
+<h2>Step 1</h2>
+The three that matter most, what are they called ?<br>Of whom thy art an integral part<br>
+<input type="text" name="a1" />
+<br>
+<a href="#" class="button" id="next1" onclick="nxt1()">Next</a>
+</div>
+
+<div class="form" id="step2" style="display:none;">
+<h2>Step 2</h2>
+Which reptile does this site celebrate ? <br>
+<input type="text" name="a2" />
+<br>
+<a href="#" class="button" id="next2" onclick="nxt2()">Next</a>
+</div>
+
+<div class="form" id="step3" style="display:none;">
+<h2>Step 3</h2>
+Which country does this site celebrate ? (In 4 letters)<br>
+<input type="text" name="a3" />
+<br>
+<input type="submit" value="Try Me"/>
+</div>
+<%end%>
+<script type="text/javascript">
+function nxt1()
+{
+$('#step1').fadeOut(1000,function()
+{
+	$('#step2').fadeIn(500);
+});
+}
+
+function nxt2()
+{
+$('#step2').fadeOut(1000,function()
+{
+	$('#step3').fadeIn(500);
+});
+}
+
+</script>

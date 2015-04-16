@@ -27,6 +27,7 @@ height: 1.5em;
 nav div{
 display:inline;
 padding-right: 2em;
+padding-top:0;
 line-height:1.5em;
 }
 
@@ -40,5 +41,11 @@ color: black;
 }
 body{
 padding-top:2em;
+}
+
+.flash{
+border: 2px red groove;
+width: 95%;
+color: red;
 }
 
