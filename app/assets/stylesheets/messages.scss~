@@ -7,5 +7,4 @@ border: thin green solid;
 color: #ABCDEF;
 padding: 2em;
 height: 80%;
-overflow: auto;
 }

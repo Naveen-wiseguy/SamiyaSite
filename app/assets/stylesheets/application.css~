@@ -29,6 +29,7 @@ display:inline;
 padding-right: 2em;
 padding-top:0;
 line-height:1.5em;
+color: white;
 }
 
 nav div:hover{
@@ -37,7 +38,7 @@ background-color: #8686A2;
 
 nav div a{
 text-decoration: none;
-color: black;
+color: white;
 }
 body{
 padding-top:2em;

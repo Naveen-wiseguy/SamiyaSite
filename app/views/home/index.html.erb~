@@ -1,2 +1,9 @@
 <h1>Welcome to the B'Day Celebration</h1>
-<p>It's that time of the year again. Time to say Happy birthday to a very special person. 
+<% if session[:loggedin]!=true %>
+<p>It's that time of the year again. Time to say Happy birthday to a very special person. Samiya Nasim, yes I mean her.
+</p>
+<p>Leave behind a message for her </P>
+<% else %>
+<p>Hey there !!! Heres what people have to say to you on this day ! <%= link_to 'Check it out ', messages_path %> </p>
+
+<% end %>

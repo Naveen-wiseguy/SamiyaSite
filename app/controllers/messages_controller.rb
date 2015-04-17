@@ -9,9 +9,12 @@ class MessagesController < ApplicationController
  end
 
  def create
-  @message=Message.new(message_params)
-  if @message.save redirect_to messages_path
-  else redirect_to new_message_path
+  @message=Message.new(message_param)
+  if @message.save 
+    redirect_to root_path, alert: "Thank you ! Much appreciated !"
+  else 
+    redirect_to new_message_path
+  end
  end
 
  def message_param

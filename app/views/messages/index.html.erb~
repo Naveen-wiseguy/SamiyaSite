@@ -1,0 +1,8 @@
+<div class="message" >
+<% @messages.each do |message| %>
+Name : <%= message.name %><br>
+Title : <%= message.title %> <br>
+What they say : <%= message.content %>
+<hr>
+<% end %>
+</div>
