@@ -12,14 +12,17 @@ class HomeController < ApplicationController
  def authenticate
   if params[:a1].casecmp("tripod")==0 && (params[:a2].casecmp("crocodile")==0 || params[:a2].casecmp("croc")==0) && params[:a3].casecmp("DPRK")==0
    session[:loggedin]=true
-   redirect_to root_path, alert: "Logged in ! :)"
+   flash[:success]="Logged in ! :)"
+   redirect_to root_path
   else
-   redirect_to '/login', alert: "Incorrect"
+   flash[:danger]="Incorrect"
+   redirect_to '/login'
   end
  end
 
  def logout
   session[:loggedin]=false
-  redirect_to root_path, alert: "Logged out"
+  flash[:success]="Logged out"
+  redirect_to root_path
  end
 end

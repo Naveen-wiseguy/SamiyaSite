@@ -17,7 +17,7 @@
 	<div>
 	 <ul class="nav navbar-nav">
 		<li><%= link_to 'Who is Samiya ?' , 'about' %></li>
-		<li><a href="gallery.html">Photo Gallery</a></li>  
+		<li><%= link_to 'Photo Gallery','gallery' %></li>  
 	</ul>
 	<ul class="nav navbar-nav navbar-right">
 <% if !session[:loggedin] %>
@@ -51,7 +51,7 @@
 </nav>
 
 <% flash.each do |key,value| %>
- <div class="flash"><%= value %> </div>
+ <div class="alert alert-<%= key %>"><%= value %> </div>
 <% end %>
 <%= yield %>
 
