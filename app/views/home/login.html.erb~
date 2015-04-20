@@ -1,6 +1,7 @@
-<% flash.each do |key,value| %>
- <div class="flash"><%= value %> </div>
-<% end %>
+<div class="container">
+<div class="row">
+</div>
+<div class="row">
 <h1>Prove yourself to be True</h1>
 <p>3 is the magic number. And 3 questions you shall have to answer to prove yourself true. The triple filter test awaits you. </p>
 <p>Take it one at a time</p>
@@ -11,7 +12,7 @@
 The three that matter most, what are they called ?<br>Of whom thy art an integral part<br>
 <input type="text" name="a1" />
 <br>
-<a href="#" class="button" id="next1" onclick="nxt1()">Next</a>
+<a href="#" class="btn btn-primary" id="next1" onclick="nxt1()">Next</a>
 </div>
 
 <div class="form" id="step2" style="display:none;">
@@ -19,7 +20,7 @@ The three that matter most, what are they called ?<br>Of whom thy art an integra
 Which reptile does this site celebrate ? <br>
 <input type="text" name="a2" />
 <br>
-<a href="#" class="button" id="next2" onclick="nxt2()">Next</a>
+<a href="#" class="btn btn-primary" id="next2" onclick="nxt2()">Next</a>
 </div>
 
 <div class="form" id="step3" style="display:none;">
@@ -27,9 +28,11 @@ Which reptile does this site celebrate ? <br>
 Which country does this site celebrate ? (In 4 letters)<br>
 <input type="text" name="a3" />
 <br>
-<input type="submit" value="Try Me"/>
+<input type="submit" class="btn btn-primary" value="Try Me"/>
 </div>
 <%end%>
+</div>
+</div>
 <script type="text/javascript">
 function nxt1()
 {

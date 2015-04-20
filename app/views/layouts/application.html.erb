@@ -8,18 +8,54 @@
 </head>
 <body>
 <nav>
-<div><%= link_to 'Home', root_path %></div>
+<div class = container-fluid>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+		
+	<div class="navbar-header">
+		<%= link_to 'Home',root_path, class:"navbar-brand" %>
+	</div>
+	<div>
+	 <ul class="nav navbar-nav">
+		<li><%= link_to 'Who is Samiya ?' , 'about' %></li>
+		<li><a href="gallery.html">Photo Gallery</a></li>  
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
 <% if !session[:loggedin] %>
-<div><%= link_to 'Login', 'login' %></div>
+		<%= link_to new_message_path do %>
+		<div class ="btn-group" style="right:7px;top:7px">
+		<button type="button-lg" class="btn btn-primary">
+		<span class="glyphicon glyphicon-envelope"></span> Message Samiya
+ 		</button>
+		<% end %>
+		<%= link_to 'login' do %>						
+		<button type="button-lg" class="btn btn-primary">
+		<span class="glyphicon glyphicon-log-in"></span> Log In as Samiya
+ 		</button>
+		<% end %>
 <% else %>
-<div><%= link_to 'Logout', 'logout' %></div>
+		<%= link_to messages_path do %>
+		<div class ="btn-group" style="right:7px;top:7px">
+		<button type="button-lg" class="btn btn-primary">
+		<span class="glyphicon glyphicon-envelope"></span> See messages
+ 		</button>
+		<% end %>
+		<%= link_to 'logout' do %>						
+		<button type="button-lg" class="btn btn-primary">
+		<span class="glyphicon glyphicon-log-out"></span> Log out
+ 		</button>
+		<% end %>
 <% end %>
-<div><%= link_to 'About','about' %> </div>
+	</ul>
+	</div>
+		 	 
 </nav>
+
 <% flash.each do |key,value| %>
  <div class="flash"><%= value %> </div>
 <% end %>
 <%= yield %>
+
+</div><!-- container-fluid -->
 
 </body>
 </html>
