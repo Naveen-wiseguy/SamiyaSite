@@ -1,8 +1,33 @@
-<div class="message" >
+<h1>With all the love </h1>
+
 <% @messages.each do |message| %>
+<div class="panel" id="<%=message.id %>">
+<div class="level2">
+<p>
 Name : <%= message.name %><br>
 Title : <%= message.title %> <br>
 What they say : <%= message.content %>
-<hr>
-<% end %>
+</p>
 </div>
+</div>
+<% end %>
+
+<div id="header">
+<h1> Whos got stuff to say</h1>
+<ul id="navigation">
+<% @messages.each do |message| %>
+<li><a href="#<%= message.id %>" onclick="change(this)"><%= message.name %></a></li>
+<% end %>
+</ul>
+
+</div>
+
+
+<script type="text/javascript" >
+function change(e)
+{
+$('#header #navigation a').css("background","rgba(0,0,0,0.3)");
+e.style.background="#000";
+e.style.color="#fff";
+}
+</script>

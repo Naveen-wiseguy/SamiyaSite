@@ -41,7 +41,6 @@
 			#navigation a{
 				color: #444;
 				display: block;
-				background: #fff;
 				background: rgba(0,0,0,0.3);
 				line-height: 50px;
 				padding: 0px 20px;
@@ -98,23 +97,13 @@
 				padding: 10px;
 				margin: 3px 0px;
 			}
-			#welcome:target ~ #header #navigation #link-welcome,
-			#level1:target ~ #header #navigation #link-level1,
-			#about:target ~ #header #navigation #link-about,
-			#level3:target ~ #link-level3{
-				background: #000;
-				color: #fff;
-			}
 			body{
 			background:url(<%= image_path 'korean.jpg' %>) no-repeat;   
 			-webkit-background-size: cover;
   			-moz-background-size: cover;
   			-o-background-size: cover;
  			 background-size: cover;}
+			input[type="text"]{
+			background: rgba(0,0,0,0.3);
+			}
 
-.form{
-border: 2px inset black;
-padding:1em;
-width: 80%;
-margin: auto; 
-}

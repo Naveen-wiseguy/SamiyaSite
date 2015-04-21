@@ -16,8 +16,8 @@
 	</div>
 	<div>
 	 <ul class="nav navbar-nav">
-		<li><%= link_to 'Who is Samiya ?' , 'about' %></li>
-		<li><%= link_to 'Photo Gallery','gallery' %></li>  
+		<li><%= link_to 'Who is Samiya ?' , '/about' %></li>
+		<li><%= link_to 'Photo Gallery','/gallery' %></li>  
 	</ul>
 	<ul class="nav navbar-nav navbar-right">
 <% if !session[:loggedin] %>
@@ -27,7 +27,7 @@
 		<span class="glyphicon glyphicon-envelope"></span> Message Samiya
  		</button>
 		<% end %>
-		<%= link_to 'login' do %>						
+		<%= link_to '/login' do %>						
 		<button type="button-lg" class="btn btn-primary">
 		<span class="glyphicon glyphicon-log-in"></span> Log In as Samiya
  		</button>

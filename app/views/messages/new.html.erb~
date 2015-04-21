@@ -1,15 +1,46 @@
-<h1>Say what you wanna say, on this special day</h1>
+<div id="form1" class="panel">
+<div class="level2">
 <%= form_for @message do |f| %>
-<%= f.label :name %>
-<%= f.text_field :name %>
+<h2 style="font-size: 55px;">Say what you wanna say, on this special day</h2>
+<p>Leave behind a birthday message</p>
 <br>
-<%= f.label :title %>
-<div class="form">
-<%= f.text_field :title %>
+<p>
+<table border="0">
+<tr>
+<td><%= f.label :name %></td>
+<td><%= f.text_field :name %></td>
+</tr>
 <br>
-<%= f.label :content %>
-<%= f.text_area :content %>
+<tr>
+<td><%= f.label :title %></td>
+<td><%= f.text_field :title %></td>
+</tr>
 <br>
-<%= f.submit "Send" %>
+<tr>
+<td><%= f.label :content %></td>
+<td><%= f.text_area :content %></td>
+</tr>
+<br>
+</table>
+<%= f.submit "Send",class:"btn btn-primary" %>
+</p>
 <% end %>
+</div>
 </div >
+
+<div id="header">
+<h1> Are you who you claim to be?</h1>
+<ul id="navigation">
+	<li><a id="link-form1" href="#form1" onclick="change(this)" >Put in your message</a></li>
+	
+</ul>
+</div>
+
+<script type="text/javascript" >
+function change(e)
+{
+$('#header #navigation a').css("background","rgba(0,0,0,0.3)");
+e.style.background="#000";
+e.style.color="#fff";
+}
+</script>
