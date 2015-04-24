@@ -47,6 +47,9 @@ group :development, :test do
 
 end
 
+gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
+gem 'autoprefixer-rails'
+
 group :production do
   gem 'pg','0.15.1'
   gem 'rails_12factor','0.0.2'

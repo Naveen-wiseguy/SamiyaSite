@@ -15,10 +15,10 @@
 		</div>
 		<!-- /welcome -->
 
-
+<%= form_for @message do |f| %>
 <div id="form1" class="panel">
 <div class="level2">
-<%= form_for @message do |f| %>
+
 <h2 style="font-size: 55px;">Say what you wanna say, on this special day</h2>
 <p>Leave behind a birthday message</p>
 <br>
@@ -38,18 +38,39 @@
 <%= f.text_area :content,class: "formw" %>
 </span>
 <br>
-<%= f.submit "Send",class:"btn btn-primary" %>
+
 </p>
-<% end %>
+
 </div>
 </div >
+
+<div id="form2" class="panel">
+<div class="level2">
+<p>
+Image upload <%= f.check_box :image_present %>
+Select an image: <%= f.file_field :image %><br>
+</p>
+</div>
+</div>
+
+<div id="done" class="panel">
+<div class="level2">
+<p>Thank you for taking the time. If you are done, go ahead !<br>
+<%= f.submit "Send",class:"btn btn-primary" %>
+</p>
+
+</div>
+</div>
+
+<% end %>
 
 <div id="header">
 <h1> Are you who you claim to be?</h1>
 <ul id="navigation">
 	<li><a id="link-welcome" href="#welcome" onclick="change(this)">Welcome</a></li>
 	<li><a id="link-form1" href="#form1" onclick="change(this)" >Put in your message</a></li>
-	
+	<li><a id="link-form2" href="#form2" onclick="change(this)" >Image</a></li>
+	<li><a id="link-done" href="#done" onclick="change(this)" >Done</a></li>
 </ul>
 </div>
 

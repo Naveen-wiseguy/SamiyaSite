@@ -10,8 +10,10 @@ class MessagesController < ApplicationController
 
  def create
   @message=Message.new(message_param)
-  if @message.save redirect_to root_path, alert: "Thank you ! Much appreciated !"
-  else redirect_to new_message_path
+  if @message.save 
+    redirect_to root_path, alert: "Thank you ! Much appreciated !"
+  else 
+    redirect_to new_message_path
   end
  end
 
