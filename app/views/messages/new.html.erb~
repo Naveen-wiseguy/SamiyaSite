@@ -1,3 +1,21 @@
+		<!--Welcome Page -->
+		<div id="welcome" class="panel">
+			<div class = "level2">
+				<h2>Welcome</h2>
+				<p>So if you are wondering as 
+				to what this is all about , its just a 
+				way to let Samiya know how much you
+				mean to her . The messages and the images
+				that you upload can only be viwed by Samiya
+				. So pour out your feelings and upload the most memorable pic
+				you have with her :)	</p><br/>
+
+			</div>
+			<!-- ... -->
+		</div>
+		<!-- /welcome -->
+
+
 <div id="form1" class="panel">
 <div class="level2">
 <%= form_for @message do |f| %>
@@ -5,23 +23,21 @@
 <p>Leave behind a birthday message</p>
 <br>
 <p>
-<table border="0">
-<tr>
-<td><%= f.label :name %></td>
-<td><%= f.text_field :name %></td>
-</tr>
+<span class="rowf">
+<%= f.label :name,class: "labelf"%>
+<%= f.text_field :name,class: "formw" %>
+</span>
 <br>
-<tr>
-<td><%= f.label :title %></td>
-<td><%= f.text_field :title %></td>
-</tr>
+<span class="rowf">
+<%= f.label :title,class: "labelf" %>
+<%= f.text_field :title,class: "formw" %>
+</span>
 <br>
-<tr>
-<td><%= f.label :content %></td>
-<td><%= f.text_area :content %></td>
-</tr>
+<span class="rowf">
+<%= f.label :content,class: "labelf" %>
+<%= f.text_area :content,class: "formw" %>
+</span>
 <br>
-</table>
 <%= f.submit "Send",class:"btn btn-primary" %>
 </p>
 <% end %>
@@ -31,6 +47,7 @@
 <div id="header">
 <h1> Are you who you claim to be?</h1>
 <ul id="navigation">
+	<li><a id="link-welcome" href="#welcome" onclick="change(this)">Welcome</a></li>
 	<li><a id="link-form1" href="#form1" onclick="change(this)" >Put in your message</a></li>
 	
 </ul>

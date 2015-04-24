@@ -2,7 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#header{
+			.rowf
+			{
+				clear:both;
+				padding-top:10px;
+	
+			}
+
+			.labelf
+			{
+			float:left;
+			width : 100px;
+			text-align:right;
+			}
+
+			.formw
+			{
+			float:right;
+			width:350px;
+			text-align:left;
+			}
+			#header{
 				position: absolute;
 				z-index: 2000;
 				width: 235px;
@@ -44,6 +64,7 @@
 		
 			.panel{
 				min-width: 100%;
+				left:0;
 				height: 98%;
 				overflow-y: auto;
 				overflow-x: hidden;
