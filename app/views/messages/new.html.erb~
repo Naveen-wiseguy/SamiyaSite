@@ -46,6 +46,7 @@
 
 <div id="form2" class="panel">
 <div class="level2">
+<h2>Got a special picture ? </h2>
 <p>
 Image upload <%= f.check_box :image_present %>
 Select an image: <%= f.file_field :image %><br>
@@ -70,6 +71,7 @@ Select an image: <%= f.file_field :image %><br>
 	<li><a id="link-welcome" href="#welcome" onclick="change(this)">Welcome</a></li>
 	<li><a id="link-form1" href="#form1" onclick="change(this)" >Put in your message</a></li>
 	<li><a id="link-form2" href="#form2" onclick="change(this)" >Image</a></li>
+	<li><a id="link-done" href="#done" onclick="change(this)" >Done</a></li>
 </ul>
 </div>
 

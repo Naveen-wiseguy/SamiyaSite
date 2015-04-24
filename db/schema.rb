@@ -11,14 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150406174653) do
+ActiveRecord::Schema.define(version: 20150424093957) do
 
   create_table "messages", force: :cascade do |t|
     t.string   "name"
     t.string   "title"
     t.text     "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "image_uid"
+    t.boolean  "image_present"
   end
 
 end
