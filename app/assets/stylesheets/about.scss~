@@ -1,3 +1,7 @@
+// Place all the styles related to the About controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
 
 				   * { margin: 0; padding: 0; }
 				body {
@@ -134,4 +138,7 @@ background-color:lavender ; background:url(<%= image_path 'dramione.png' %>) no-
 					transform: rotate(45deg);
 					background: linear-gradient(-45deg, #c9c9c9 50%, transparent 50%);
 					content: '';
+				}
+				.container-fluid{
+				height: 50%;
 				}

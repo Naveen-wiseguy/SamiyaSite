@@ -14,7 +14,7 @@
 		<%if !session[:loggedin] %>
 		<%= link_to 'Home',root_path, class:"navbar-brand" %>
 		<% else %>
-		<%= link_to 'Home','/logged', class:"navbar-brand" %>
+		<%= link_to 'Home','/loggedin', class:"navbar-brand" %>
 		<% end %>
 	</div>
 	<div>

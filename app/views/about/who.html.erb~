@@ -1,18 +1,17 @@
-<%= stylesheet_link_tag 'homeabout' %>
-<div class ="container-fluid">		
+<div class = "container-fluid">		
 <div class="row">
 				<div class="col-sm-1 col-md-2">
 				</div>
 
-				<div class="col-sm-10 col-md-8 jumbotron" style="background-color:brown; height: 45%; overflow-y:auto; margin-top: 5%">
+				<div class="col-sm-10 col-md-8 jumbotron" style="background-color:brown; height: 300px; overflow-y:auto; margin-top: 0">
 				<br/>
-				<div id ="home" style="font-size:18">
+				<div id ="home" style="font-size:18;color: white;">
 				<b>Early Life</b><br/>
 				Samiya Nasim was born in Salem on May 3 1995 to Mr.Muhammad Nasimuddin and Dr.Mussarat Feshan.She has an elder brother.
 				She later moved to Chennai when her parents got transferred. She attended school at DAV Gopalapuram which she joined in 2001.
 				She is currently pursuing her under-graduation in Computer Science and Engineering at SSN College.<br/> </div>
 <hr/>
-<div id="interests" style="font-size:18">
+<div id="interests" style="font-size:18; color:white;">
 				<b>Her Interests</b><br/>
 				She is an excellent athlete and has competed at the state and national levels. She plays most sports.
 				She loves reading, and is a huge Potterbuff. She is also Dramione fan girl.
@@ -20,12 +19,12 @@
 				She also loves theatre and has acted in a number of plays.
 				</div>
 <hr />
-<div id="debate" style="font-size:18">
+<div id="debate" style="font-size:18;color: white;">
 				<b>Debating Skills</b><br/>
 				Samiya is a debater par excellence. She has been debating right from her schools days and has won many competitions. She has participated and won in many national level debating championships in school. In college too she has won debates at a number of culturals. Debating led to MUNs in college. She has particpated in a number of them and has performed brilliantly. Her speaking skills are at a different level. Her research is impeccable.
 </div>
 <hr/>
-<div id="accomplish" style="font-size:18">
+<div id="accomplish" style="font-size:18;color:white;">
 				<b>Accomplishments</b><br/>
 				Her accomplishments are many. Some of them are:
 			<ul><li>Won the silver medal in long jump in CBSE Nationals</li>
@@ -37,7 +36,7 @@
 </ul>
 <hr/>
 </div>
-<div id="future" style="font-size:18" >
+<div id="future" style="font-size:18;color:white;" >
 				<b>What lies ahead</b><br/>
 				Samiya sees herself pursuing her higher studies in a reputed university abroad. Followed by a short stint abroad and coming back home. Hopefully a start up back home a few years down the line. She also plans to serve society in all possible ways through her work.
 </div>

@@ -7,6 +7,7 @@ Rails.application.routes.draw do
  get '/logout' => 'home#logout'
  post '/Auth' => 'home#authenticate'
  get '/gallery' => 'home#gallery'
+ get '/loggedin' => 'home#logged'
  resources :messages, only: [:index,:new,:create]
 
   # You can have the root of your site routed with "root"

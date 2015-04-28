@@ -24,12 +24,12 @@
 <br>
 <p>
 <span class="rowf">
-<%= f.label :name,class: "labelf"%>
+<%= f.label :name, class: "labelf"%>
 <%= f.text_field :name,class: "formw" %>
 </span>
 <br>
 <span class="rowf">
-<%= f.label :title,class: "labelf" %>
+<%= f.label :title, 'Known as',class: "labelf" %>
 <%= f.text_field :title,class: "formw" %>
 </span>
 <br>
@@ -49,11 +49,11 @@
 <h2>Got a special picture ? </h2>
 <p>
 <span class="row">
-<span class="labelf">Do you want to upload an image ?</span> <span class="formw"><%= f.check_box :image_present %> </span>
+<span>Do you want to upload an image ?</span> <span><%= f.check_box :image_present %> </span>
 </span>
 <br><br>
 <span class="row">
-<span class="labelf" >Select an image: </span> <span class="formw"><%= f.file_field :image%></span><br>
+<span >Select an image: </span> <span><%= f.file_field :image%></span><br>
 </span>
 </p>
 </div>

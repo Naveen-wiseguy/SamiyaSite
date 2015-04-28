@@ -8,7 +8,11 @@ Title : <%= message.title %> <br>
 What they say : <%= message.content %>
 </p>
 <br>
-<%= image_tag message.image.url,width: "200",height: "200" if message.image_present %>
+<% if message.image_present %>
+<%= link_to message.image.url do %>
+<%= image_tag message.image.url,width: "200",height: "200" %>
+<% end %>
+<% end %>
 </div>
 </div>
 <% end %>
