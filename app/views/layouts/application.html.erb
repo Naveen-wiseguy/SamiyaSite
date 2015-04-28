@@ -11,7 +11,11 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
 		
 	<div class="navbar-header">
+		<%if !session[:loggedin] %>
 		<%= link_to 'Home',root_path, class:"navbar-brand" %>
+		<% else %>
+		<%= link_to 'Home','/loggedin', class:"navbar-brand" %>
+		<% end %>
 	</div>
 	<div>
 	 <ul class="nav navbar-nav">
