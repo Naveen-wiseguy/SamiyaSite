@@ -1,9 +1,10 @@
+<%= stylesheet_link_tag 'homeabout' %>
 <div class = "container-fluid">		
 <div class="row">
 				<div class="col-sm-1 col-md-2">
 				</div>
 
-				<div class="col-sm-10 col-md-8 jumbotron" style="background-color:brown; height: 300px; overflow-y:auto; margin-top: 0">
+				<div class="col-sm-10 col-md-8 jumbotron" style="background-color:rgba(255,0,0,0.5); height: 300px; overflow-y:auto; margin-top: 0">
 				<br/>
 				<div id ="home" style="font-size:18;color: white;">
 				<b>Early Life</b><br/>
