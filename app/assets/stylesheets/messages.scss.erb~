@@ -20,7 +20,6 @@
 			{
 			float:right;
 			width:350px;
-			text-align:left;
 			}
 			#header{
 				position: absolute;
@@ -28,7 +27,7 @@
 				width: 235px;
 				top: 50px;
 				background-color: #ffcb00;
-				height: 80%
+				height: 80%;
 				overflow-y: auto;
 				overflow-x: hidden;
 

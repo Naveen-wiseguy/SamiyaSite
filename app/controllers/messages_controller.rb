@@ -1,6 +1,10 @@
 class MessagesController < ApplicationController
 
  def index
+  if session[:loggedin] == false
+	flash[:danger]="Access denied"
+	redirect_to root_path
+  end
   @messages=Message.all
  end
 
