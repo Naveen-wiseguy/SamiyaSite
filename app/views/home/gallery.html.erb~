@@ -3,7 +3,7 @@
 <div class="col-sm-1 col-md-2">
 </div>
 <div class="row">
-	<div class="col-sm-10 col-md-8">
+	<div class="col-sm-10 col-md-8" style="background:url(<%= image_path 'pikachu.jpg' %>) no-repeat">
 		<br/><br/><br/>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
@@ -35,6 +35,21 @@
 	    <div class="item">
 		<center>
 	      <img src="<%= image_path 'samiya.jpg' %>" height="750" width="750"/ >
+		</center>
+	    </div>
+	    <div class="item">
+		<center>
+	      <img src="<%= image_path 'samiya_quoet.jpg' %>" height="750" width="750"/ >
+		</center>
+	    </div>
+	    <div class="item">
+		<center>
+	      <img src="<%= image_path 'me_sam.jpg' %>" height="750" width="750"/ >
+		</center>
+	    </div>
+	    <div class="item">
+		<center>
+	      <img src="<%= image_path 'sid_sam.jpg' %>" height="750" width="550"/ >
 		</center>
 	    </div>
  	 </div>

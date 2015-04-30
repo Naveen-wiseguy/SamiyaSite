@@ -7,7 +7,10 @@
 	
 	<center>
 		<h1>Happy Birthday Samiya !!</h1>
-		<div class="well well-lg">
+		<div class="well " height="350" width="350" style=" background: -webkit-radial-gradient(rgb(255, 153, 0),rgb(255, 204, 0),rgb(255,255,0)); /* Safari 5.1 to 6.0 */
+									    background: -o-radial-gradient(rgb(255, 153, 0),rgb(255, 204, 0),rgb(255,255,0)); /* For Opera 11.6 to 12.0 */
+									    background: -moz-radial-gradient(rgb(255, 153, 0),rgb(255, 204, 0),rgb(255,255,0)); /* For Firefox 3.6 to 15 */
+									    background: radial-gradient(rgb(255, 153, 0),rgb(255, 204, 0),rgb(255,255,0)); /* Standard syntax (must be last) */">
 		<img src="<%= image_path 'samiya_baby.jpg' %>" class="img-circle" alt="Cinque Terre" width="250" height="250">
 		<br/><br/>
 		<div class="btn-group btn-group-sm">
