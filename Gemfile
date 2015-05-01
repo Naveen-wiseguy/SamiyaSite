@@ -54,6 +54,7 @@ group :production do
   gem 'pg','0.15.1'
   gem 'rails_12factor','0.0.2'
   gem 'unicorn', '4.8.3'
+  gem 'rack-cache', :require => 'rack/cache'
 end
 
 gem 'dragonfly'

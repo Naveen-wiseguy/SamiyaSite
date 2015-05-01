@@ -29,7 +29,7 @@
 </span>
 <br>
 <span class="rowf">
-<span class="labelf"><%= f.label :title %> </span>
+<span class="labelf"><%= f.label :title, 'Known as' %> </span>
 <span class="formw"><%= f.text_field :title %></span>
 </span>
 <br>
