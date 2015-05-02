@@ -20,7 +20,7 @@
 	<div>
 <% if session[:loggedin]==true %>
 	<ul class="nav navbar-nav">
-	<li><a href="#">Tripod Forever</a></li>
+	<li><a href="/tripod">Tripod Forever</a></li>
 	</ul>
 <%end %>
 	 <ul class="nav navbar-nav">
