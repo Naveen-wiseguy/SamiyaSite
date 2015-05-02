@@ -1227,7 +1227,7 @@ background:url('<%= image_path 'dramione.png' %>') no-repeat;
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <center>
 <img src="<%= image_path 'sampaul.jpg' %>"  alt="Cinque Terre">
-		<p style="font-style: italic;color: #000;">No matter where you are, whether it's a quarter-mile away or halfway around the world, you'll always be with us and you'll always be our princess of joy.</p>
+		<div style="background-color: red;"><p style="font-style: italic;color: #000;">No matter where you are, whether it's a quarter-mile away or halfway around the world, you'll always be with us and you'll always be our princess of joy.</p></div>
 		<br/><br/>
 	</center>
 
