@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
  root 'home#index'
  get '/login' => 'home#login'
- get '/about' => 'home#about'
+ get '/about' => 'about#who'
  get '/logout' => 'home#logout'
  post '/Auth' => 'home#authenticate'
  get '/gallery' => 'home#gallery'

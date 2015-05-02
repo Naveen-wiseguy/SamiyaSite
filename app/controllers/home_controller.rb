@@ -34,4 +34,10 @@ class HomeController < ApplicationController
     redirect_to root_path
   end
  end
+
+ def tri
+  if session[:loggedin]==false
+    redirect_to root_path
+  end
+ end
 end
